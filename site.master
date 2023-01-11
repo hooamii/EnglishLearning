@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="site.master.cs" Inherits="site" %>
+
+<!DOCTYPE html>
+
+<html dir="rtl" xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Learn English With Game</title>
+     
+    <link href="CSS/site.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        
+            <div class="header-wrapper">
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">
+                    <a id="A1" runat="server" href="~/"></a></p>
+            </div>
+            </div>
+            
+        </div>
+   
+    <div id="body">
+        
+        
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+
+    </div>
+    <div id="footer">
+        <div class="content-wrapper">
+           
+                <p>copyright©2013 Fatemeh Taghizad<br />
+                      All rights reserved
+                </p>
+           
+        </div>
+    </div>
+    </form>
+</body>
+</html>

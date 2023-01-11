@@ -1,0 +1,47 @@
+﻿
+<div id="templateHolder" style="padding:30px;" >
+    <table style="border:solid 3px ; background-color:#ffd300; border-collapse:collapse;border-spacing:10px;" border="1">
+        <thead style="background-color:#ff0000; height:40px">
+        <tr>
+            <th style="border:solid 1px #ff6a00" >شماره ی بازی</th>
+      <th > گروه لغت</th>
+      <th >میانگین امتیازات </th>
+	  <th >بیشترین امتیاز</th>
+	  <th >کمترین امتیاز</th>
+        <th >تعداد دفعات بازی</th>
+        <th > بالاترین رکورد </th>
+        <th  >رکورددار</th>
+        </tr>
+      </thead>
+        <tbody>
+        {#foreach $T as record} 
+          <tr>
+              <td>
+                  {$T.record.GameNo}
+              </td>
+              <td>
+                  {$T.record.GroupName}
+              </td>
+              <td>
+                  {$T.record.ScoresAvg}
+              </td>
+              <td>
+                  {$T.record.MaxScore}
+              </td>
+              <td>
+                  {$T.record.MinScore}
+              </td>
+              <td>
+                  {$T.record.PlayCount}
+              </td>
+              <td>
+                  {$T.record.Record}
+              </td>
+              <td>
+                  {$T.record.RecordDar}
+              </td>
+          </tr>
+        {#/for}
+            </tbody>
+    </table>
+</div>
